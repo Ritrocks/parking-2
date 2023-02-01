@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <style>
+            body{
+                width: 100%;
+                height:100%;
+                overflow-x: hidden;
+            }
+            .header {
+                background-color: purple;
+                position:absolute;
+                top: 10%;
+                left: 10%;
+                width: 80%;
+                height:40%;
+                border-style:double;
+                border-color: rgb(81, 255, 220);
+
+            }
+            .content {
+                background-color: darkmagenta;
+                position:absolute;
+                top:60%;
+                left: 10%;
+                width:80%;
+                height:80%;
+                border-style:double;
+                border-width: 5px;
+                border-color: rgb(81, 255, 220);
+            }
+            video{
+                position: fixed;
+                margin-left: 0;
+                margin-right: 0;
+                left: 0;
+                bottom: 0;
+                max-width: width 100px;;
+                min-height: 100%;
+                object-fit:cover;
+            }
+            .yes {
+                color:rgb(81, 255, 220);
+                text-align:center;
+                font-style:italic;
+            }
+            .parking_image {
+                width:100%;
+                height: 100%;
+                object-fit:fill;
+            }
+            .cursed {
+                display: none;
+                position:absolute;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+            }
+            .header:hover .cursed{
+                display: block;
+            }
+            .cursed_image {
+                width:100%;
+                height:100%;
+                object-fit: fill;
+            }
+        </style>
+    </head>
+    </head>
+    <body>
+     <video autoplay muted loop id="myVideo">
+  <source src="background.mp4" type="video/mp4">
+    </video>
+<div class="header">
+    <img src="providence place parking.png" class="parking_image">
+    <div class="cursed">
+        <img src="providence place parking cursed.png" class="cursed_image">
+    </div>
+</div>
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <p class="yes">parking at owners risk</p>
+  <p>car</p>
+
+</div>
+    </body>
+</html>
